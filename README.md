@@ -24,5 +24,8 @@ then I run Odoo `./odoo/odoo-bin -c odoo.conf`
 When developing the module I use the `-u` flag to auto upgrade the module when restarting and
 the `--dev` flag to allow browser refresh when working on the views
 
-I run a Pycharm configuration and use the following flags:
-`-c odoo.conf -u estate --dev xml`
+I run a Pycharm configuration and use the following flags (adjust as needed), this allows edits to xml files only
+requiring a browser refresh to see the changes and a module upgrade each time the configuration is restart, handy for 
+developing :grin:
+
+`-c odoo.conf -u real-estate -u estate_account --dev xml`
